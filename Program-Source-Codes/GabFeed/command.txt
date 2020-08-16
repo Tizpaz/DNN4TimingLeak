@@ -1,3 +1,4 @@
-# First download generated_keys.txt file from:
-
+# First download "generated_keys.txt" file from:
+https://drive.google.com/file/d/1fmzzSuvZM5l_RKiY7ZrX5qvzS1MFOF57/view?usp=sharing
+# then place the file in this folder and run the following command:
 java -jar gabfeed.jar time > result_time.txt
