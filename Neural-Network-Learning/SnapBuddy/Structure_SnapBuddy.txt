@@ -1,0 +1,6 @@
+    learning_rate = 1e-2
+    pub_layer_sizes = [20]
+    priv_layer_sizes = [100]
+    combined_layer_sizes = [100]
+
+python learnNeuralModel-reducer.py SnapBuddy/snapbuddy_final.csv 100000 0.1 32 0.00001 10 0 SnapBuddy/snapbuddy_output

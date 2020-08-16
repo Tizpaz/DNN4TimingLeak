@@ -1,0 +1,16 @@
+python main.py Micro-Benchmark/R_4/RegEx_4_1_output_4.mat Micro-Benchmark/R_4/RegEx_4_1_MIP.py 2
+gurobi.sh Micro-Benchmark/R_4/RegEx_4_1_MIP.py
+python post_process_MIP.py Micro-Benchmark/R_4/RegEx_4_1_MIP.py_Model_res.txt
+
+python main.py Micro-Benchmark/Branch_Loop_3/Branch_Loop_3_output.mat Micro-Benchmark/Branch_Loop_3/Branch_Loop_3_MIP.py 6
+gurobi.sh Micro-Benchmark/Branch_Loop_3/Branch_Loop_3_MIP.py 
+python post_process_MIP.py Micro-Benchmark/Branch_Loop_3/Branch_Loop_3_MIP.py_Model_res.txt
+
+
+python main.py Micro-Benchmark/R_5/RegEx_5_1_output.mat Micro-Benchmark/R_5/RegEx_5_1_MIP.py 2
+gurobi.sh Micro-Benchmark/R_5/RegEx_5_1_MIP.py
+ python post_process_MIP.py Micro-Benchmark/R_5/RegEx_5_1_MIP.py_Model_res.txt
+
+python main.py Micro-Benchmark/R_6/RegEx_6_1_output.mat Micro-Benchmark/R_6/RegEx_6_1_MIP.py 3
+gurobi.sh Micro-Benchmark/R_6/RegEx_6_1_MIP.py
+python post_process_MIP.py Micro-Benchmark/R_6/RegEx_6_1_MIP.py_Model_res.txt

@@ -1,0 +1,61 @@
+Using license file /Users/saeid/gurobi.lic
+Academic license - for non-commercial use only
+Changed value of parameter PoolSearchMode to 2
+   Prev: 0  Min: 0  Max: 2  Default: 0
+Changed value of parameter PoolSolutions to 100
+   Prev: 10  Min: 1  Max: 2000000000  Default: 10
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (mac64)
+Optimize a model with 44 rows, 32 columns and 116 nonzeros
+Model fingerprint: 0x8fd58854
+Model has 14 quadratic constraints
+Variable types: 14 continuous, 18 integer (18 binary)
+Coefficient statistics:
+  Matrix range     [4e-02, 1e+04]
+  QMatrix range    [1e+00, 1e+00]
+  QLMatrix range   [5e-01, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [6e-01, 1e+04]
+  QRHS range       [5e-01, 5e-01]
+Presolve removed 18 rows and 8 columns
+Presolve time: 0.00s
+Presolved: 46 rows, 29 columns, 123 nonzeros
+Variable types: 17 continuous, 12 integer (12 binary)
+Found heuristic solution: objective 2.0000000
+
+Root relaxation: objective 2.000000e+00, 2 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.00000    0    1    2.00000    2.00000  0.00%     -    0s
+
+Optimal solution found at node 0 - now completing solution pool...
+
+    Nodes    |    Current Node    |      Pool Obj. Bounds     |     Work
+             |                    |   Worst                   |
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0          -    0               -    2.00000      -     -    0s
+     0     0          -    0               -    2.00000      -     -    0s
+     0     0          -    0               -    2.00000      -     -    0s
+     0     2          -    0               -    2.00000      -     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 2
+  Implied bound: 2
+  MIR: 2
+  Flow cover: 1
+  RLT: 2
+
+Explored 14 nodes (31 simplex iterations) in 0.01 seconds
+Thread count was 16 (of 16 available processors)
+
+Solution count 2: 2 2 
+No other solutions better than -1e+100
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.000000000000e+00, best bound 2.000000000000e+00, gap 0.0000%
+Time taken to calculate (in milli-seconds):
+5

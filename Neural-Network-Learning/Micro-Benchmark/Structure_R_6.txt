@@ -1,0 +1,6 @@
+    learning_rate = 1e-3
+    pub_layer_sizes = [10,10]
+    priv_layer_sizes = [10,10]
+    combined_layer_sizes = [20]
+
+python learnNeuralModel.py Micro-Benchmark/R_6.csv 70000 0.1 100 0.0 0 Micro-Benchmark/RegEx_6_1

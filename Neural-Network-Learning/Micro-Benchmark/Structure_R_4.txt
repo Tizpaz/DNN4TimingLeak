@@ -1,0 +1,7 @@
+    learning_rate = 1e-3
+    pub_layer_sizes = [5]
+    priv_layer_sizes = [5]
+    combined_layer_sizes = [10]
+
+python learnNeuralModel-reducer.py Micro-Benchmark/R_4.csv 50000 0.1 50 0.00001 2 0 Micro-Benchmark/RegEx_4_1
+

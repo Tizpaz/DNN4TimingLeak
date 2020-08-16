@@ -1,0 +1,3 @@
+# First download generated_keys.txt file from:
+
+java -jar gabfeed.jar time > result_time.txt

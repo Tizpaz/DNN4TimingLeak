@@ -1,0 +1,219 @@
+                if cost_itr_pred < 100000.0:
+                        break
+    learning_rate = 1e-2
+    pub_layer_sizes = [100]
+    priv_layer_sizes = [50,50]
+    combined_layer_sizes = [200,200]
+
+python learnNeuralModel-reducer.py GabFeed/gabFeed_final.csv 200000 0.1 64 0.00001 6 0 GabFeed/gabFeed_output
+
+('Epoch:', '180000', 'cost_total=124834.887925781', 'cost_pred=124834.887925781', 'cost_reg=0.000000000')
+('Epoch:', '181000', 'cost_total=164733.160335937', 'cost_pred=164733.160335937', 'cost_reg=0.000000000')
+('Epoch:', '182000', 'cost_total=149107.985125000', 'cost_pred=149107.985125000', 'cost_reg=0.000000000')
+('Epoch:', '183000', 'cost_total=129203.051359375', 'cost_pred=129203.051359375', 'cost_reg=0.000000000')
+('Epoch:', '184000', 'cost_total=134426.486152344', 'cost_pred=134426.486152344', 'cost_reg=0.000000000')
+('Epoch:', '185000', 'cost_total=162051.310402344', 'cost_pred=162051.310402344', 'cost_reg=0.000000000')
+('Epoch:', '186000', 'cost_total=175683.031968750', 'cost_pred=175683.031968750', 'cost_reg=0.000000000')
+('Epoch:', '187000', 'cost_total=179311.170769531', 'cost_pred=179311.170769531', 'cost_reg=0.000000000')
+('Epoch:', '188000', 'cost_total=156089.485847656', 'cost_pred=156089.485847656', 'cost_reg=0.000000000')
+('Epoch:', '189000', 'cost_total=174991.072535156', 'cost_pred=174991.072535156', 'cost_reg=0.000000000')
+('Epoch:', '190000', 'cost_total=146035.286910156', 'cost_pred=146035.286910156', 'cost_reg=0.000000000')
+('Epoch:', '191000', 'cost_total=177264.464882812', 'cost_pred=177264.464882812', 'cost_reg=0.000000000')
+('Epoch:', '192000', 'cost_total=173685.942218750', 'cost_pred=173685.942218750', 'cost_reg=0.000000000')
+('Epoch:', '193000', 'cost_total=187367.321792969', 'cost_pred=187367.321792969', 'cost_reg=0.000000000')
+('Epoch:', '194000', 'cost_total=144081.494871094', 'cost_pred=144081.494871094', 'cost_reg=0.000000000')
+('Epoch:', '195000', 'cost_total=186713.488921875', 'cost_pred=186713.488921875', 'cost_reg=0.000000000')
+('Epoch:', '196000', 'cost_total=173376.888144531', 'cost_pred=173376.888144531', 'cost_reg=0.000000000')
+('Epoch:', '197000', 'cost_total=159300.467398437', 'cost_pred=159300.467398437', 'cost_reg=0.000000000')
+('Epoch:', '198000', 'cost_total=116503.670595703', 'cost_pred=116503.670595703', 'cost_reg=0.000000000')
+('Epoch:', '199000', 'cost_total=181195.071945312', 'cost_pred=181195.071945312', 'cost_reg=0.000000000')
+('Epoch:', '200000', 'cost_total=258294.235527344', 'cost_pred=258294.235527344', 'cost_reg=0.000000000')
+Optimization Finished!
+Time of computation : 2410589
+Results saved to file: GabFeed/gabFeed_output
+('Test Loss:', 145736.42)
+('Coefficient of Determination R^2:', '0.9523353605007004')
+
+python learnNeuralModel-reducer_same.py GabFeed/gabFeed_final.csv 50000 0.1 64 0.00001 0 0 GabFeed/gabFeed_output_K0
+
+('Epoch:', '39000', 'cost_total=2163233.222000000', 'cost_pred=2163233.222000000', 'cost_reg=0.000000000')
+('Epoch:', '40000', 'cost_total=2148870.331812500', 'cost_pred=2148870.331812500', 'cost_reg=0.000000000')
+('Epoch:', '41000', 'cost_total=2137543.007375000', 'cost_pred=2137543.007375000', 'cost_reg=0.000000000')
+('Epoch:', '42000', 'cost_total=2130934.632750000', 'cost_pred=2130934.632750000', 'cost_reg=0.000000000')
+('Epoch:', '43000', 'cost_total=2119869.645375000', 'cost_pred=2119869.645375000', 'cost_reg=0.000000000')
+('Epoch:', '44000', 'cost_total=2128408.430687500', 'cost_pred=2128408.430687500', 'cost_reg=0.000000000')
+('Epoch:', '45000', 'cost_total=2143308.969125000', 'cost_pred=2143308.969125000', 'cost_reg=0.000000000')
+('Epoch:', '46000', 'cost_total=2164524.848500000', 'cost_pred=2164524.848500000', 'cost_reg=0.000000000')
+('Epoch:', '47000', 'cost_total=2152380.113250000', 'cost_pred=2152380.113250000', 'cost_reg=0.000000000')
+('Epoch:', '48000', 'cost_total=2135581.396625000', 'cost_pred=2135581.396625000', 'cost_reg=0.000000000')
+('Epoch:', '49000', 'cost_total=2122255.437125000', 'cost_pred=2122255.437125000', 'cost_reg=0.000000000')
+('Epoch:', '50000', 'cost_total=2107683.743562500', 'cost_pred=2107683.743562500', 'cost_reg=0.000000000')
+Optimization Finished!
+Time of computation : 702679
+Results saved to file: GabFeed/gabFeed_output_K0
+('Test Loss:', 2132757.2)
+('Coefficient of Determination R^2:', '0.26159765342980634')
+
+python learnNeuralModel-reducer_same.py GabFeed/gabFeed_final.csv 50000 0.1 64 0.00001 1 0 GabFeed/gabFeed_output_K1
+
+('Epoch:', '40000', 'cost_total=732928.464031250', 'cost_pred=732928.464031250', 'cost_reg=0.000000000')
+('Epoch:', '41000', 'cost_total=798706.259593750', 'cost_pred=798706.259593750', 'cost_reg=0.000000000')
+('Epoch:', '42000', 'cost_total=1053442.348906250', 'cost_pred=1053442.348906250', 'cost_reg=0.000000000')
+('Epoch:', '43000', 'cost_total=1074974.536343750', 'cost_pred=1074974.536343750', 'cost_reg=0.000000000')
+('Epoch:', '44000', 'cost_total=1004540.447093750', 'cost_pred=1004540.447093750', 'cost_reg=0.000000000')
+('Epoch:', '45000', 'cost_total=1055679.883500000', 'cost_pred=1055679.883500000', 'cost_reg=0.000000000')
+('Epoch:', '46000', 'cost_total=1114963.139343750', 'cost_pred=1114963.139343750', 'cost_reg=0.000000000')
+('Epoch:', '47000', 'cost_total=1261515.717000000', 'cost_pred=1261515.717000000', 'cost_reg=0.000000000')
+('Epoch:', '48000', 'cost_total=1300407.992937500', 'cost_pred=1300407.992937500', 'cost_reg=0.000000000')
+('Epoch:', '49000', 'cost_total=997446.706781250', 'cost_pred=997446.706781250', 'cost_reg=0.000000000')
+('Epoch:', '50000', 'cost_total=1012085.189500000', 'cost_pred=1012085.189500000', 'cost_reg=0.000000000')
+Optimization Finished!
+Time of computation : 688738
+Results saved to file: GabFeed/gabFeed_output_K1
+('Test Loss:', 1188177.2)
+('Coefficient of Determination R^2:', '0.5893650687372953')
+
+python learnNeuralModel-reducer_same.py GabFeed/gabFeed_final.csv 50000 0.1 64 0.00001 2 0 GabFeed/gabFeed_output_K2
+
+('Epoch:', '39000', 'cost_total=682844.430734375', 'cost_pred=682844.430734375', 'cost_reg=0.000000000')
+('Epoch:', '40000', 'cost_total=451530.923828125', 'cost_pred=451530.923828125', 'cost_reg=0.000000000')
+('Epoch:', '41000', 'cost_total=407810.027468750', 'cost_pred=407810.027468750', 'cost_reg=0.000000000')
+('Epoch:', '42000', 'cost_total=414945.690296875', 'cost_pred=414945.690296875', 'cost_reg=0.000000000')
+('Epoch:', '43000', 'cost_total=439215.272140625', 'cost_pred=439215.272140625', 'cost_reg=0.000000000')
+('Epoch:', '44000', 'cost_total=411847.102078125', 'cost_pred=411847.102078125', 'cost_reg=0.000000000')
+('Epoch:', '45000', 'cost_total=463113.174640625', 'cost_pred=463113.174640625', 'cost_reg=0.000000000')
+('Epoch:', '46000', 'cost_total=600391.100250000', 'cost_pred=600391.100250000', 'cost_reg=0.000000000')
+('Epoch:', '47000', 'cost_total=552383.608890625', 'cost_pred=552383.608890625', 'cost_reg=0.000000000')
+('Epoch:', '48000', 'cost_total=661442.039562500', 'cost_pred=661442.039562500', 'cost_reg=0.000000000')
+('Epoch:', '49000', 'cost_total=664828.861390625', 'cost_pred=664828.861390625', 'cost_reg=0.000000000')
+('Epoch:', '50000', 'cost_total=508092.586062500', 'cost_pred=508092.586062500', 'cost_reg=0.000000000')
+Optimization Finished!
+Time of computation : 683053
+Results saved to file: GabFeed/gabFeed_output_K2
+('Test Loss:', 459482.66)
+('Coefficient of Determination R^2:', '0.8448562120243492')
+
+python learnNeuralModel-reducer_same.py GabFeed/gabFeed_final.csv 50000 0.1 64 0.00001 3 0 GabFeed/gabFeed_output_K3
+
+('Epoch:', '40000', 'cost_total=310841.413351563', 'cost_pred=310841.413351563', 'cost_reg=0.000000000')
+('Epoch:', '41000', 'cost_total=298719.108015625', 'cost_pred=298719.108015625', 'cost_reg=0.000000000')
+('Epoch:', '42000', 'cost_total=301949.402171875', 'cost_pred=301949.402171875', 'cost_reg=0.000000000')
+('Epoch:', '43000', 'cost_total=303241.226625000', 'cost_pred=303241.226625000', 'cost_reg=0.000000000')
+('Epoch:', '44000', 'cost_total=284421.183968750', 'cost_pred=284421.183968750', 'cost_reg=0.000000000')
+('Epoch:', '45000', 'cost_total=289285.123601563', 'cost_pred=289285.123601563', 'cost_reg=0.000000000')
+('Epoch:', '46000', 'cost_total=285544.832453125', 'cost_pred=285544.832453125', 'cost_reg=0.000000000')
+('Epoch:', '47000', 'cost_total=284193.963617188', 'cost_pred=284193.963617188', 'cost_reg=0.000000000')
+('Epoch:', '48000', 'cost_total=311138.635132812', 'cost_pred=311138.635132812', 'cost_reg=0.000000000')
+('Epoch:', '49000', 'cost_total=280931.183179687', 'cost_pred=280931.183179687', 'cost_reg=0.000000000')
+('Epoch:', '50000', 'cost_total=277702.869632813', 'cost_pred=277702.869632813', 'cost_reg=0.000000000')
+Optimization Finished!
+Time of computation : 686183
+Results saved to file: GabFeed/gabFeed_output_K3
+('Test Loss:', 317401.3)
+('Coefficient of Determination R^2:', '0.8908529348581553')
+
+python learnNeuralModel-reducer_same.py GabFeed/gabFeed_final.csv 50000 0.1 64 0.00001 4 0 GabFeed/gabFeed_output_K4
+
+('Epoch:', '40000', 'cost_total=306580.496218750', 'cost_pred=306580.496218750', 'cost_reg=0.000000000')
+('Epoch:', '41000', 'cost_total=349658.909429687', 'cost_pred=349658.909429687', 'cost_reg=0.000000000')
+('Epoch:', '42000', 'cost_total=344502.995484375', 'cost_pred=344502.995484375', 'cost_reg=0.000000000')
+('Epoch:', '43000', 'cost_total=348293.942109375', 'cost_pred=348293.942109375', 'cost_reg=0.000000000')
+('Epoch:', '44000', 'cost_total=334882.232046875', 'cost_pred=334882.232046875', 'cost_reg=0.000000000')
+('Epoch:', '45000', 'cost_total=362033.602609375', 'cost_pred=362033.602609375', 'cost_reg=0.000000000')
+('Epoch:', '46000', 'cost_total=342700.141320313', 'cost_pred=342700.141320313', 'cost_reg=0.000000000')
+('Epoch:', '47000', 'cost_total=313173.739171875', 'cost_pred=313173.739171875', 'cost_reg=0.000000000')
+('Epoch:', '48000', 'cost_total=320855.925007813', 'cost_pred=320855.925007813', 'cost_reg=0.000000000')
+('Epoch:', '49000', 'cost_total=344604.030070312', 'cost_pred=344604.030070312', 'cost_reg=0.000000000')
+('Epoch:', '50000', 'cost_total=366566.872140625', 'cost_pred=366566.872140625', 'cost_reg=0.000000000')
+Optimization Finished!
+Time of computation : 600365
+Results saved to file: GabFeed/gabFeed_output_K4
+('Test Loss:', 345929.94)
+('Coefficient of Determination R^2:', '0.8841150958806293')
+
+python learnNeuralModel-reducer_same.py GabFeed/gabFeed_final.csv 50000 0.1 64 0.00001 5 0 GabFeed/gabFeed_output_K5
+
+('Epoch:', '40000', 'cost_total=222491.043218750', 'cost_pred=222491.043218750', 'cost_reg=0.000000000')
+('Epoch:', '41000', 'cost_total=175764.548664062', 'cost_pred=175764.548664062', 'cost_reg=0.000000000')
+('Epoch:', '42000', 'cost_total=222836.918554687', 'cost_pred=222836.918554687', 'cost_reg=0.000000000')
+('Epoch:', '43000', 'cost_total=201555.257761719', 'cost_pred=201555.257761719', 'cost_reg=0.000000000')
+('Epoch:', '44000', 'cost_total=178785.819128906', 'cost_pred=178785.819128906', 'cost_reg=0.000000000')
+('Epoch:', '45000', 'cost_total=163740.386148438', 'cost_pred=163740.386148438', 'cost_reg=0.000000000')
+('Epoch:', '46000', 'cost_total=179183.494457031', 'cost_pred=179183.494457031', 'cost_reg=0.000000000')
+('Epoch:', '47000', 'cost_total=178089.766875000', 'cost_pred=178089.766875000', 'cost_reg=0.000000000')
+('Epoch:', '48000', 'cost_total=193137.004820312', 'cost_pred=193137.004820312', 'cost_reg=0.000000000')
+('Epoch:', '49000', 'cost_total=194259.350066406', 'cost_pred=194259.350066406', 'cost_reg=0.000000000')
+('Epoch:', '50000', 'cost_total=233970.559367187', 'cost_pred=233970.559367187', 'cost_reg=0.000000000')
+Optimization Finished!
+Time of computation : 1199577
+Results saved to file: GabFeed/gabFeed_output_K5
+('Test Loss:', 264241.8)
+('Coefficient of Determination R^2:', '0.9141005637391433')
+
+python learnNeuralModel-reducer_same.py GabFeed/gabFeed_final.csv 50000 0.1 64 0.00001 7 0 GabFeed/gabFeed_output_K7
+
+('Epoch:', '30000', 'cost_total=172042.891921875', 'cost_pred=172042.891921875', 'cost_reg=0.000000000')
+('Epoch:', '31000', 'cost_total=163170.493660156', 'cost_pred=163170.493660156', 'cost_reg=0.000000000')
+('Epoch:', '32000', 'cost_total=169813.856625000', 'cost_pred=169813.856625000', 'cost_reg=0.000000000')
+('Epoch:', '33000', 'cost_total=156912.803316406', 'cost_pred=156912.803316406', 'cost_reg=0.000000000')
+('Epoch:', '34000', 'cost_total=163119.535820313', 'cost_pred=163119.535820313', 'cost_reg=0.000000000')
+('Epoch:', '35000', 'cost_total=168652.547773437', 'cost_pred=168652.547773437', 'cost_reg=0.000000000')
+('Epoch:', '36000', 'cost_total=157932.077796875', 'cost_pred=157932.077796875', 'cost_reg=0.000000000')
+('Epoch:', '37000', 'cost_total=135248.856160156', 'cost_pred=135248.856160156', 'cost_reg=0.000000000')
+Optimization Finished!
+Time of computation : 589382
+Results saved to file: GabFeed/gabFeed_output_K7
+('Test Loss:', 130849.81)
+('Coefficient of Determination R^2:', '0.9542524063605246')
+
+python learnNeuralModel-reducer_same.py GabFeed/gabFeed_final.csv 50000 0.1 64 0.00001 8 0 GabFeed/gabFeed_output_K8
+
+('Epoch:', '30000', 'cost_total=179651.504132812', 'cost_pred=179651.504132812', 'cost_reg=0.000000000')
+('Epoch:', '31000', 'cost_total=164812.855550781', 'cost_pred=164812.855550781', 'cost_reg=0.000000000')
+('Epoch:', '32000', 'cost_total=167711.918996094', 'cost_pred=167711.918996094', 'cost_reg=0.000000000')
+('Epoch:', '33000', 'cost_total=201560.397796875', 'cost_pred=201560.397796875', 'cost_reg=0.000000000')
+('Epoch:', '34000', 'cost_total=172174.618148437', 'cost_pred=172174.618148437', 'cost_reg=0.000000000')
+('Epoch:', '35000', 'cost_total=156065.856636719', 'cost_pred=156065.856636719', 'cost_reg=0.000000000')
+('Epoch:', '36000', 'cost_total=152287.110679687', 'cost_pred=152287.110679687', 'cost_reg=0.000000000')
+('Epoch:', '37000', 'cost_total=155743.584570312', 'cost_pred=155743.584570312', 'cost_reg=0.000000000')
+('Epoch:', '38000', 'cost_total=166982.608726562', 'cost_pred=166982.608726562', 'cost_reg=0.000000000')
+('Epoch:', '39000', 'cost_total=158600.485472656', 'cost_pred=158600.485472656', 'cost_reg=0.000000000')
+('Epoch:', '40000', 'cost_total=142708.117007813', 'cost_pred=142708.117007813', 'cost_reg=0.000000000')
+Optimization Finished!
+Time of computation : 751833
+Results saved to file: GabFeed/gabFeed_output_K8
+('Test Loss:', 152827.61)
+('Coefficient of Determination R^2:', '0.9494177224469577')
+
+
+python learnNeuralModel-reducer_same.py GabFeed/gabFeed_final.csv 50000 0.1 64 0.00001 9 0 GabFeed/gabFeed_output_K9
+
+('Epoch:', '20000', 'cost_total=151496.650406250', 'cost_pred=151496.650406250', 'cost_reg=0.000000000')
+('Epoch:', '21000', 'cost_total=174037.320902344', 'cost_pred=174037.320902344', 'cost_reg=0.000000000')
+('Epoch:', '22000', 'cost_total=242314.401710937', 'cost_pred=242314.401710937', 'cost_reg=0.000000000')
+('Epoch:', '23000', 'cost_total=166818.269089844', 'cost_pred=166818.269089844', 'cost_reg=0.000000000')
+('Epoch:', '24000', 'cost_total=166875.182343750', 'cost_pred=166875.182343750', 'cost_reg=0.000000000')
+('Epoch:', '25000', 'cost_total=145141.854183594', 'cost_pred=145141.854183594', 'cost_reg=0.000000000')
+Optimization Finished!
+Time of computation : 425461
+Results saved to file: GabFeed/gabFeed_output_K9
+('Test Loss:', 154730.34)
+('Coefficient of Determination R^2:', '0.9480300235419514')
+
+python learnNeuralModel-reducer_same.py GabFeed/gabFeed_final.csv 50000 0.1 64 0.00001 10 0 GabFeed/gabFeed_output_K10
+
+('Epoch:', '10000', 'cost_total=180438.141773437', 'cost_pred=180438.141773437', 'cost_reg=0.000000000')
+('Epoch:', '11000', 'cost_total=168944.519128906', 'cost_pred=168944.519128906', 'cost_reg=0.000000000')
+('Epoch:', '12000', 'cost_total=176916.097472656', 'cost_pred=176916.097472656', 'cost_reg=0.000000000')
+('Epoch:', '13000', 'cost_total=195057.746851562', 'cost_pred=195057.746851562', 'cost_reg=0.000000000')
+('Epoch:', '14000', 'cost_total=167300.014402344', 'cost_pred=167300.014402344', 'cost_reg=0.000000000')
+('Epoch:', '15000', 'cost_total=173716.287726562', 'cost_pred=173716.287726562', 'cost_reg=0.000000000')
+('Epoch:', '16000', 'cost_total=197288.170039063', 'cost_pred=197288.170039063', 'cost_reg=0.000000000')
+('Epoch:', '17000', 'cost_total=159004.561144531', 'cost_pred=159004.561144531', 'cost_reg=0.000000000')
+('Epoch:', '18000', 'cost_total=171545.490843750', 'cost_pred=171545.490843750', 'cost_reg=0.000000000')
+('Epoch:', '19000', 'cost_total=141556.550191406', 'cost_pred=141556.550191406', 'cost_reg=0.000000000')
+Optimization Finished!
+Time of computation : 242738
+Results saved to file: GabFeed/gabFeed_output_K10
+('Test Loss:', 118110.555)
+('Coefficient of Determination R^2:', '0.9593219305968842')

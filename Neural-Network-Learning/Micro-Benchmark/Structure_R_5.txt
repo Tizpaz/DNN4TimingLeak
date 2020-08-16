@@ -1,0 +1,14 @@
+Note: These are computations with l2 norm
+    for (W, b) in weights_list_private:
+        # l2 norm compuation:
+        regularizer += tf.nn.l2_loss(W)
+    # loss function is l2 norm
+    y_diff = tf.square(y_mdl - y)
+    loss_pred = tf.reduce_mean(y_diff)
+
+    learning_rate = 1e-3
+    pub_layer_sizes = [10,10]
+    priv_layer_sizes = [10,10]
+    combined_layer_sizes = [20]
+
+python learnNeuralModel.py Micro-Benchmark/R_5.csv 60000 0.1 100 0.0 0 Micro-Benchmark/RegEx_5

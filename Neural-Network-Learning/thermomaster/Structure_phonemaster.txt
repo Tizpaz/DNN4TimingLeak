@@ -1,0 +1,36 @@
+                if cost_itr_pred < 2000.0:
+                    break
+    learning_rate = 8e-3
+
+    pub_layer_sizes = [5]
+    priv_layer_sizes = [50,50]
+    combined_layer_sizes = [100]
+
+python learnNeuralModel-reducer.py phonemaster/phone_master_final.csv 200000 0.01 16 0.00001 10 0 phonemaster/phone_master_output
+('Epoch:', '350000', 'cost_total=2863.420314417', 'cost_pred=2863.420314417', 'cost_reg=0.000000000')
+('Epoch:', '351000', 'cost_total=2895.398649737', 'cost_pred=2895.398649737', 'cost_reg=0.000000000')
+('Epoch:', '352000', 'cost_total=3353.305027338', 'cost_pred=3353.305027338', 'cost_reg=0.000000000')
+('Epoch:', '353000', 'cost_total=3173.628236891', 'cost_pred=3173.628236891', 'cost_reg=0.000000000')
+('Epoch:', '354000', 'cost_total=2590.492851966', 'cost_pred=2590.492851966', 'cost_reg=0.000000000')
+('Epoch:', '355000', 'cost_total=2415.829514940', 'cost_pred=2415.829514940', 'cost_reg=0.000000000')
+('Epoch:', '356000', 'cost_total=2450.080353773', 'cost_pred=2450.080353773', 'cost_reg=0.000000000')
+('Epoch:', '357000', 'cost_total=3231.799044615', 'cost_pred=3231.799044615', 'cost_reg=0.000000000')
+('Epoch:', '358000', 'cost_total=2108.004496883', 'cost_pred=2108.004496883', 'cost_reg=0.000000000')
+('Epoch:', '359000', 'cost_total=3126.274481272', 'cost_pred=3126.274481272', 'cost_reg=0.000000000')
+('Epoch:', '360000', 'cost_total=3328.151646318', 'cost_pred=3328.151646318', 'cost_reg=0.000000000')
+('Epoch:', '361000', 'cost_total=2508.277502831', 'cost_pred=2508.277502831', 'cost_reg=0.000000000')
+('Epoch:', '362000', 'cost_total=2705.419912865', 'cost_pred=2705.419912865', 'cost_reg=0.000000000')
+('Epoch:', '363000', 'cost_total=2920.966866711', 'cost_pred=2920.966866711', 'cost_reg=0.000000000')
+('Epoch:', '364000', 'cost_total=2992.187959435', 'cost_pred=2992.187959435', 'cost_reg=0.000000000')
+('Epoch:', '365000', 'cost_total=2827.057657153', 'cost_pred=2827.057657153', 'cost_reg=0.000000000')
+('Epoch:', '366000', 'cost_total=2852.436327412', 'cost_pred=2852.436327412', 'cost_reg=0.000000000')
+('Epoch:', '367000', 'cost_total=3858.060137266', 'cost_pred=3858.060137266', 'cost_reg=0.000000000')
+('Epoch:', '368000', 'cost_total=3246.043705795', 'cost_pred=3246.043705795', 'cost_reg=0.000000000')
+('Epoch:', '369000', 'cost_total=2472.070105799', 'cost_pred=2472.070105799', 'cost_reg=0.000000000')
+('Epoch:', '370000', 'cost_total=2058.844046028', 'cost_pred=2058.844046028', 'cost_reg=0.000000000')
+('Epoch:', '371000', 'cost_total=1581.552054161', 'cost_pred=1581.552054161', 'cost_reg=0.000000000')
+Optimization Finished!
+Time of computation : 565983
+Results saved to file: phonemaster/phone_master_output
+('Test Loss:', 49078.67)
+('Coefficient of Determination R^2:', '0.9933738622552813')
