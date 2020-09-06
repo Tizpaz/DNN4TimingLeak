@@ -26,7 +26,7 @@ public class R_2 {
                     Thread.sleep(1);
                 }
               }
-              else if (secret0 == 1 && secret0 == 0) {
+              else if (secret0 == 1 && secret1 == 0) {
                 for(int i = 0; i < N;i++) {
                     Thread.sleep(1);
                 }
